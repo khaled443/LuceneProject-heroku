@@ -14,10 +14,10 @@
 
     <properties>
     
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-217-235-87.eu-west-1.compute.amazonaws.com:5432/d1h8ra5u7146q3?currentSchema=khdb2"/>
-            <property name="javax.persistence.jdbc.user" value="ojgmdpxiwjmqmc"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-217-235-87.eu-west-1.compute.amazonaws.com:5432/d6h4c5sf0g4d82?currentSchema=khdb2"/>
+            <property name="javax.persistence.jdbc.user" value="tihovguhnbvuxw"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.password" value="9371433c270ac9cd10686f0a2e3780de634761a6eca94a01bd0d612ec2c50929"/>
+            <property name="javax.persistence.jdbc.password" value="774daa955ad995daf6ccb98951f5b31d0489550b89f736d1efc12a42fc38b248"/>
             <!-- temp show sql Querys  -->
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="false"/>
