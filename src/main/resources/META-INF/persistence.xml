@@ -14,10 +14,10 @@
 
     <properties>
     
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-217-235-87.eu-west-1.compute.amazonaws.com:5432/d6h4c5sf0g4d82?currentSchema=khdb2"/>
-            <property name="javax.persistence.jdbc.user" value="tihovguhnbvuxw"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://db.f4.htw-berlin.de:5432/_s0556290__lucene?currentSchema=khdb2"/>
+            <property name="javax.persistence.jdbc.user" value="s0556290"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.password" value="774daa955ad995daf6ccb98951f5b31d0489550b89f736d1efc12a42fc38b248"/>
+            <property name="javax.persistence.jdbc.password" value="luceneproject"/>
             <!-- temp show sql Querys  -->
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="false"/>
