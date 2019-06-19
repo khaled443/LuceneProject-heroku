@@ -1,0 +1,25 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="Index.xhtml">
+    <ui:define name="source">
+        <h:form>
+            <p:growl id="growl" showDetail="true" sticky="false" />  
+            <p:panel header="Patientenfall hinzufügen">  
+                <p:outputLabel value="Fall Id: " for="fallid" />
+                <p:inputNumber id="fallid" value="#{fallData.fallId}" />
+                <br></br><br></br>
+
+                <p:outputLabel value="Fall Nummer:  " for="fallnummer" />
+                <p:inputText id="fallnummer" value="#{fallData.fallNummer2}"   />
+
+                <br></br><br></br>
+
+                <p:commandButton value="Löchen" id="ajax"  update="@form" action="#{fallData.addNewFall()}" style="margin-right:20px;" icon="pi pi-trash" styleClass="ui-priority-primary"  />
+            </p:panel>   
+        </h:form>
+    </ui:define>
+
+</ui:composition>

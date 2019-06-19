@@ -1,0 +1,18 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="Index.xhtml">
+    <ui:define name="source">
+        <h:form>
+            <p:growl id="growl" showDetail="true" sticky="false" />  
+            <p:panel header="Patientenfall löschen">  
+                <p:outputLabel value="Fall Nummer:  " for="fall" />
+                <p:autoComplete id="fall" value="#{fallData.fallNummer}" completeMethod="#{fallData.completeText}"  />
+                <p:commandButton value="Löchen" id="ajax"  update="@form" action="#{fallData.deleteFall}" style="margin-right:20px;" icon="pi pi-trash" styleClass="ui-priority-primary"  />
+            </p:panel>   
+        </h:form>
+    </ui:define>
+
+</ui:composition>

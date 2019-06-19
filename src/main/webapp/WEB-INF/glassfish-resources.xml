@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool allow-non-component-callers="false" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="auto-commit" datasource-classname="org.postgresql.ds.PGSimpleDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="post-gre-sql_postgres_postgresPool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.DataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="false">
+        <property name="serverName" value="localhost"/>
+        <property name="portNumber" value="5432"/>
+        <property name="databaseName" value="postgres"/>
+        <property name="User" value="postgres"/>
+        <property name="Password" value="admin"/>
+        <property name="URL" value="jdbc:postgresql://localhost:5432/postgres"/>
+        <property name="driverClass" value="org.postgresql.Driver"/>
+    </jdbc-connection-pool>
+    <jdbc-resource enabled="true" jndi-name="java:app/postgres" object-type="user" pool-name="post-gre-sql_postgres_postgresPool"/>
+    <jdbc-resource enabled="true" jndi-name="java:app/postgres2" object-type="user" pool-name="post-gre-sql_postgres_postgresPool"/>
+    <jdbc-resource enabled="true" jndi-name="java:app/testtt" object-type="user" pool-name="post-gre-sql_postgres_postgresPool"/>
+    <jdbc-connection-pool allow-non-component-callers="false" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="auto-commit" datasource-classname="org.postgresql.ds.PGSimpleDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="post-gre-sql__s0556290__lucene_s0556290Pool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.DataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="false">
+        <property name="serverName" value="db.f4.htw-berlin.de"/>
+        <property name="portNumber" value="5432"/>
+        <property name="databaseName" value="_s0556290__lucene"/>
+        <property name="User" value="s0556290"/>
+        <property name="Password" value="Sandra#2700"/>
+        <property name="URL" value="jdbc:postgresql://db.f4.htw-berlin.de:5432/_s0556290__lucene"/>
+        <property name="driverClass" value="org.postgresql.Driver"/>
+    </jdbc-connection-pool>
+    <jdbc-resource enabled="true" jndi-name="java:app/htw" object-type="user" pool-name="post-gre-sql__s0556290__lucene_s0556290Pool"/>
+    <jdbc-connection-pool allow-non-component-callers="false" associate-with-thread="false" connection-creation-retry-attempts="0" connection-creation-retry-interval-in-seconds="10" connection-leak-reclaim="false" connection-leak-timeout-in-seconds="0" connection-validation-method="auto-commit" datasource-classname="org.postgresql.ds.PGSimpleDataSource" fail-all-connections="false" idle-timeout-in-seconds="300" is-connection-validation-required="false" is-isolation-level-guaranteed="true" lazy-connection-association="false" lazy-connection-enlistment="false" match-connections="false" max-connection-usage-count="0" max-pool-size="32" max-wait-time-in-millis="60000" name="post-gre-sql_d1h8ra5u7146q3_ojgmdpxiwjmqmcPool" non-transactional-connections="false" pool-resize-quantity="2" res-type="javax.sql.DataSource" statement-timeout-in-seconds="-1" steady-pool-size="8" validate-atmost-once-period-in-seconds="0" wrap-jdbc-objects="false">
+        <property name="serverName" value="ec2-54-217-235-87.eu-west-1.compute.amazonaws.com"/>
+        <property name="portNumber" value="5432"/>
+        <property name="databaseName" value="d1h8ra5u7146q3"/>
+        <property name="User" value="ojgmdpxiwjmqmc"/>
+        <property name="Password" value="9371433c270ac9cd10686f0a2e3780de634761a6eca94a01bd0d612ec2c50929"/>
+        <property name="URL" value="jdbc:postgresql://ec2-54-217-235-87.eu-west-1.compute.amazonaws.com:5432/d1h8ra5u7146q3"/>
+        <property name="driverClass" value="org.postgresql.Driver"/>
+    </jdbc-connection-pool>
+    <jdbc-resource enabled="true" jndi-name="java:app/hhh" object-type="user" pool-name="post-gre-sql_d1h8ra5u7146q3_ojgmdpxiwjmqmcPool"/>
+    <jdbc-resource enabled="true" jndi-name="java:app/heroku" object-type="user" pool-name="post-gre-sql_d1h8ra5u7146q3_ojgmdpxiwjmqmcPool"/>
+    <jdbc-resource enabled="true" jndi-name="java:app/llocal" object-type="user" pool-name="post-gre-sql_postgres_postgresPool"/>
+</resources>
